@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scoreboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -16,31 +19,46 @@
           <div class="p1-display">
             <div class="score-display">
               <h1>P1</h1>
-              <div>0</div>
+              <div class="score">0</div>
             </div>
             <div class="button-display">
-              <button class="plus">+1</button>
-              <button class="minus">-1</button>
-              <button class="reset">reset</button>
+              <button class="config plus">+1</button>
+              <button class="config minus">-1</button>
+              <button class="config reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                  <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
+                  <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
+                </svg>
+              </button>
             </div>
           </div>
+          <div class="vs">VS</div>
           <div class="p2-display">
             <div class="score-display">
               <h1>P2</h1>
-              <div>0</div>
+              <div class="score">0</div>
             </div>
             <div class="button-display">
-              <button class="plus">+1</button>
-              <button class="minus">-1</button>
-              <button class="reset">reset</button>
+              <button class="config plus">+1</button>
+              <button class="config minus">-1</button>
+              <button class="config reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                  <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9" />
+                  <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z" />
+                </svg>
+              </button>
             </div>
           </div>
         </section>
-        <div class="winner-text"></div>
+        <div class="winner-text">Winner : no winner yet</div>
         <section class="menu">
+          <div class="score-increment">
+            <label for="max-score-input">Set score increment: </label>
+            <input type="number" id="score-increment-input" min="1" max="100" value="1" />
+          </div>
           <div class="max-score">
-            <label for="max-score-input">Set maximum score</label>
-            <input type="text" placeholder="Input your max score" id="max-score-input" />
+            <label for="max-score-input">Set maximum score: </label>
+            <input type="number" id="max-score-input" min="1" value="5" />
           </div>
           <button class="reset-all">Reset All</button>
         </section>

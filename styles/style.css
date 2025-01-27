@@ -127,5 +127,147 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* Variables */
+:root {
+  --bg-primary: #eeeeee;
+  --red-primary: #da1212;
+  --blue-primary: #11468f;
+  --blue-darken: #041562;
+  --purple-primary: #762c51;
+}
 
 /* Style */
+body {
+  font-family: "Poppins", serif;
+}
+.container {
+  width: 700px;
+  height: 550px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: var(--blue-darken);
+}
+header h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.display {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.display h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.display .vs {
+  font-size: 1.8rem;
+}
+.score-display h1 {
+  color: var(--blue-primary);
+}
+.p2-display,
+.p1-display {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.display .score {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-color: var(--bg-primary);
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.button-display {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.config {
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.1rem;
+  color: var(--bg-primary);
+  max-width: fit-content;
+  border: 1px solid #ffffff00;
+}
+button.config:hover {
+  background-color: var(--bg-primary);
+}
+button.reset-all {
+  width: 200px;
+  padding: 10px;
+  font-weight: 600;
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+}
+button.reset-all:hover {
+  background-color: var(--purple-primary);
+  color: var(--bg-primary);
+}
+
+#max-score-input,
+#score-increment-input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button.plus {
+  background-color: var(--blue-primary);
+}
+button.plus:hover {
+  color: var(--blue-primary);
+  border-color: var(--blue-primary);
+}
+
+button.minus {
+  background-color: var(--red-primary);
+}
+button.minus:hover {
+  color: var(--red-primary);
+  border-color: var(--red-primary);
+}
+
+button.reset {
+  background-color: var(--purple-primary);
+}
+
+button.reset:hover {
+  color: var(--purple-primary);
+  border-color: var(--purple-primary);
+}
