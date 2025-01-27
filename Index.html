@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Simple Scoreboard</h1>
+      </header>
+      <main>
+        <section class="display">
+          <div class="p1-display">
+            <div class="score-display">
+              <h1>P1</h1>
+              <div>0</div>
+            </div>
+            <div class="button-display">
+              <button class="plus">+1</button>
+              <button class="minus">-1</button>
+              <button class="reset">reset</button>
+            </div>
+          </div>
+          <div class="p2-display">
+            <div class="score-display">
+              <h1>P2</h1>
+              <div>0</div>
+            </div>
+            <div class="button-display">
+              <button class="plus">+1</button>
+              <button class="minus">-1</button>
+              <button class="reset">reset</button>
+            </div>
+          </div>
+        </section>
+        <div class="winner-text"></div>
+        <section class="menu">
+          <div class="max-score">
+            <label for="max-score-input">Set maximum score</label>
+            <input type="text" placeholder="Input your max score" id="max-score-input" />
+          </div>
+          <button class="reset-all">Reset All</button>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
