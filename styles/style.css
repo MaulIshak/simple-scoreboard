@@ -271,3 +271,7 @@ button.reset:hover {
   color: var(--purple-primary);
   border-color: var(--purple-primary);
 }
+
+.win {
+  color: rgb(0, 255, 170);
+}
