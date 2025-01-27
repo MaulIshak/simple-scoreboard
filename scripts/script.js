@@ -27,6 +27,8 @@ const defaultMaxScore = 5;
 let scoreIncrement = defaultIncrement;
 let maxScore = defaultMaxScore;
 
+// Events
+
 scoreIncrementInput.addEventListener("change", () => {
   scoreIncrement = parseInt(scoreIncrementInput.value);
   const plusTxt = `+${scoreIncrement}`;
@@ -49,6 +51,7 @@ plusButton1.addEventListener("click", () => {
       winnerText.innerHTML = "Winner: Player 1";
       isWinned = true;
       scoreElement1.classList.add("win");
+      winnerText.classList.add("winned");
     }
     scoreElement1.innerHTML = scoreP1;
   }
@@ -61,6 +64,7 @@ plusButton2.addEventListener("click", () => {
       winnerText.innerHTML = "Winner: Player 2";
       isWinned = true;
       scoreElement2.classList.add("win");
+      winnerText.classList.add("winned");
     }
     scoreElement2.innerHTML = scoreP2;
   }
@@ -81,6 +85,8 @@ resetButton1.addEventListener("click", () => {
   scoreP1 = 0;
   scoreElement1.innerHTML = scoreP1;
   scoreElement1.classList.remove("win");
+  winnerText.classList.remove("winned");
+  winnerText.innerHTML = "Winner: No winner yet";
   if (isWinned) {
     isWinned = false;
   }
@@ -89,8 +95,39 @@ resetButton2.addEventListener("click", () => {
   scoreP2 = 0;
   scoreElement2.innerHTML = scoreP2;
   scoreElement2.classList.remove("win");
+  winnerText.classList.remove("winned");
   winnerText.innerHTML = "Winner: No winner yet";
   if (isWinned) {
     isWinned = false;
   }
+});
+
+resetAllButton.addEventListener("click", () => {
+  scoreP2 = 0;
+  scoreElement2.innerHTML = scoreP2;
+  scoreElement2.classList.remove("win");
+  winnerText.classList.remove("winned");
+
+  winnerText.innerHTML = "Winner : No winner yet";
+
+  scoreP1 = 0;
+  scoreElement1.innerHTML = scoreP1;
+  scoreElement1.classList.remove("win");
+
+  if (isWinned) {
+    isWinned = false;
+  }
+
+  scoreIncrement = defaultIncrement;
+  maxScore = defaultMaxScore;
+
+  scoreIncrementInput.value = scoreIncrement;
+  maxScoreInput.value = maxScore;
+
+  const plusTxt = `+${scoreIncrement}`;
+  const minusTxt = `-${scoreIncrement}`;
+  plusButton1.innerHTML = plusTxt;
+  plusButton2.innerHTML = plusTxt;
+  minusButton1.innerHTML = minusTxt;
+  minusButton2.innerHTML = minusTxt;
 });

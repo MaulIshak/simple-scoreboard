@@ -275,3 +275,7 @@ button.reset:hover {
 .win {
   color: rgb(0, 255, 170);
 }
+
+.winned {
+  font-weight: 600;
+}
