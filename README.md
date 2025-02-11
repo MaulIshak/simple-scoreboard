@@ -1,7 +1,5 @@
 # Simple Scoreboard
 
-<a href="https://ibb.co.com/3mm8JPrh"><img src="https://i.ibb.co.com/Dff6qjVK/Screenshot-2025-02-11-085209.png" alt="Screenshot-2025-02-11-085209" border="0"></a>
-
 ## 📌 Introduction
 Simple Scoreboard is a simple web application that allows users to track scores with basic features such as adding, subtracting, and resetting scores. This application is built using **pure HTML, CSS, and JavaScript**, without any additional frameworks or libraries.
 
@@ -10,13 +8,7 @@ Simple Scoreboard is a simple web application that allows users to track scores 
 - Reset scores to the initial value.
 - Customize score increment value.
 - Customize the maximum score limit.
-- 
-### 🎥 Video Demo
-<video width="600" controls>
-  <source src="demo/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+  
 ## 🚀 Installation & Usage
 1. **Clone this repository**
    ```sh
