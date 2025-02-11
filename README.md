@@ -30,15 +30,6 @@ Simple Scoreboard is a simple web application that allows users to track scores 
 3. The score increment value can be customized as needed.
 4. Users can also set a maximum score limit to restrict the game.
 
-## 📄 File Structure
-```
-📂 simple-scoreboard
-│── index.html    # Main page
-│── style.css     # Page styling
-│── script.js     # Application logic
-└── README.md     # Project documentation
-```
-
 ## 📜 License
 This project is licensed under the **MIT License** - see the `LICENSE` file for details.
 
