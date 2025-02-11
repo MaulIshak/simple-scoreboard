@@ -8,12 +8,6 @@ Simple Scoreboard is a simple web application that allows users to track scores 
 - Reset scores to the initial value.
 - Customize score increment value.
 - Customize the maximum score limit.
-
-### 🎥 Video Demo
-<video width="600" controls>
-  <source src="demo/video-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
   
 ## 🚀 Installation & Usage
 1. **Clone this repository**
