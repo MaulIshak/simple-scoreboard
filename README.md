@@ -1,6 +1,6 @@
 # Simple Scoreboard
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=Scoreboard+Preview)
+![Project Screenshot](https://ibb.co.com/3mm8JPrh)
 
 ## 📌 Introduction
 Simple Scoreboard is a simple web application that allows users to track scores with basic features such as adding, subtracting, and resetting scores. This application is built using **pure HTML, CSS, and JavaScript**, without any additional frameworks or libraries.
