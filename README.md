@@ -33,8 +33,8 @@ Simple Scoreboard is a simple web application that allows users to track scores 
 ## 📜 License
 This project is licensed under the **MIT License** - see the `LICENSE` file for details.
 
-## Demo
-![Demo](https://github.com/MaulIshak/simple-scoreboard/blob/main/demo/video-demo.mp4?raw-true)
+## Demo Video
+[![Watch the video](https://img.youtube.com/vi/jrxBm7NfDuQ/maxresdefault.jpg)](https://youtu.be/jrxBm7NfDuQ)
 
 ---
 💡 *Don't forget to ⭐ this repository if you like it!*
